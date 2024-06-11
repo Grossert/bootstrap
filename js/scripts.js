@@ -2,14 +2,14 @@
 
     $.ajax({
         beforeSend: function (request) {
-            request.setRequestHeader("X-Api-Key", "#API-KEY#")
+            request.setRequestHeader("X-Api-Key", "yXKWXkW34lAM1lOw0wVd8A==Jfu1rmMzChv3Hxf4")
         },
         type: "GET",
         dataType: "json",
         url: "https://api.api-ninjas.com/v1/airports?min_elevation=14000",
         success: function (dataNinja) {
 
-            $("#myTable").DataTable({
+            $("#mytable").DataTable({
                 data: dataNinja,
                 columns: [
                     { 'data' : 'icao' },
